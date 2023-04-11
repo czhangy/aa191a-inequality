@@ -1,4 +1,4 @@
-# Inequality
+# Educational Inequality
 
 ### What social problem is being addressed?
 
