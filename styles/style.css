@@ -1,6 +1,7 @@
 html {
 	box-sizing: border-box;
 	overflow-x: hidden;
+	width: 100vw;
 }
 
 body {
@@ -10,13 +11,15 @@ body {
 
 main {
 	height: 88vh;
-	width: 100%;
-	max-width: 1400px;
-	margin: 0 auto;
-	padding: 0 2rem;
+	width: 100vw;
 }
 
 ul {
 	padding-left: 0;
 	list-style: none;
+	margin: 0;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	padding-inline-start: 0;
+	display: block;
 }
