@@ -1,0 +1,41 @@
+header {
+	background: black;
+	color: white;
+	height: 12vh;
+	width: 100%;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	margin: 0 auto;
+	max-width: 1400px;
+	width: 100%;
+	padding: 0 2rem;
+}
+
+header h1 {
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 2rem;
+	letter-spacing: 2px;
+}
+
+header ul {
+	display: flex;
+	font-size: 1.2rem;
+	gap: 2rem;
+}
+
+header li {
+	display: flex;
+	font-size: 1.2rem;
+	gap: 2rem;
+	font-weight: bold;
+}
+
+header a {
+	text-decoration: none;
+	color: inherit;
+}

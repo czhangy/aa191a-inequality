@@ -1,0 +1,22 @@
+html {
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+	font-family: "Archivo", sans-serif;
+}
+
+main {
+	height: 88vh;
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+ul {
+	padding-left: 0;
+	list-style: none;
+}
