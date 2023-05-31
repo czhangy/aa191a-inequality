@@ -3,6 +3,7 @@ let mapOptions = { center: [34.2009, -118.444], zoom: 9 };
 
 // use the variables
 const map = L.map("map").setView(mapOptions.center, mapOptions.zoom);
+map.addControl(new L.Control.Fullscreen());
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 	attribution:
