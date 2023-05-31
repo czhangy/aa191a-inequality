@@ -6,7 +6,7 @@ main {
 
 #map {
 	height: 80vh;
-	width: 62%;
+	width: calc(75% - 9rem);
 	border: 2px solid black;
 	position: absolute;
 	left: 4rem;
@@ -14,7 +14,7 @@ main {
 
 #stories {
 	height: 80vh;
-	width: 26%;
+	width: 25%;
 	border: 2px solid black;
 	position: absolute;
 	right: 4rem;
