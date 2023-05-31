@@ -1,0 +1,38 @@
+footer {
+	background: black;
+	color: white;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 3rem 0;
+}
+
+footer h2 {
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 2rem;
+	letter-spacing: 2px;
+	margin: 0;
+	margin-bottom: 1rem;
+}
+
+footer ul {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+footer li {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.vl {
+	height: 28px;
+	background: white;
+	width: 2px;
+}
+
+footer a {
+	text-decoration: none;
+	color: inherit;
+}

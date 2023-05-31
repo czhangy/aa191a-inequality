@@ -1,0 +1,18 @@
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+#map {
+	height: 720px;
+	width: calc(100% - 400px - 1rem);
+	border: 5px solid black;
+}
+
+#stories {
+	height: 720px;
+	width: 400px;
+	border: 5px solid black;
+}
