@@ -31,9 +31,16 @@ Educational inequality in the LA county area and its relation to socioeconomic c
 - Google Forms
   - We used Google Forms due to its simple to use interface and powerful connection to Google Sheets.
   - Within Google Sheets, we have a script that calculates coordinated based on the location sent on the survey. This gives us our point for mapping.
-  - We used Papaparse and conditional statements within Javascript to manage our responses and include them in the map.
+  - We used PapaParse and conditional statements within Javascript to manage our responses and include them in the map.
 - VSCode
   - We used VSCode as our code editor, specifically the live server feature that allows us to see our changes live.
  - Github
-  - We used GitHub as our Version Control System, allowing concurrent working on features through branching and pull requests.
- 
+   - We used GitHub as our Version Control System, allowing concurrent working on features through branching and pull requests.
+
+
+### How others can use it in the future
+
+- Students
+  - Students can use this application to be more aware of others' experiences and what resources helped them in their journeys
+- Educators
+  - Educators can understand what aspects of their support are valued most
