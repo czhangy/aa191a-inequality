@@ -36,3 +36,4 @@ Educational inequality in the LA county area and its relation to socioeconomic c
   - We used VSCode as our code editor, specifically the live server feature that allows us to see our changes live.
  - Github
   - We used GitHub as our Version Control System, allowing concurrent working on features through branching and pull requests.
+ 
