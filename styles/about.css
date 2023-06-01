@@ -1,0 +1,29 @@
+main {
+	padding: 4rem 0;
+}
+
+section {
+	margin-bottom: 4rem;
+	padding: 0 4rem;
+}
+
+section:last-child {
+	margin-bottom: 0;
+}
+
+h2 {
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 3rem;
+	margin: 0;
+	margin-bottom: 1rem;
+}
+
+p {
+	font-size: 1.8rem;
+	letter-spacing: 1px;
+	margin: 0;
+}
+
+a {
+	color: rgb(157, 137, 189);
+}
