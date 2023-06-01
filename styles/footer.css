@@ -1,5 +1,5 @@
 footer {
-	background: black;
+	background: rgb(5, 15, 70);
 	color: white;
 	display: flex;
 	align-items: center;
@@ -9,7 +9,7 @@ footer {
 
 footer h2 {
 	font-family: "Bebas Neue", sans-serif;
-	font-size: 2rem;
+	font-size: 3rem;
 	letter-spacing: 2px;
 	margin: 0;
 	margin-bottom: 3rem;
