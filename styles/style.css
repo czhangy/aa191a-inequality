@@ -10,7 +10,7 @@ body {
 }
 
 main {
-	height: 88vh;
+	min-height: calc(100vh - 100px);
 	width: 100vw;
 }
 
@@ -22,4 +22,8 @@ ul {
 	margin-block-end: 0;
 	padding-inline-start: 0;
 	display: block;
+}
+
+a:hover {
+	color: rgb(157, 137, 189);
 }
