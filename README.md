@@ -22,17 +22,17 @@ Educational inequality in the LA county area and its relation to socioeconomic c
   - Poor performing school districts may be discouraged and find themselves in a self-fulfilling prophecy
 
 
-###Technology used in the project
+### Technology used in the project
 
--Leaflet
-  -We used leaflet for our project mapping. We imported a GeoJSON that contains multipolygons with the neighborhoods/regions of LA county. 
-  -Each affirmative response to our "Support in reaching college goals question" is aggregated per region and the percentage of "Yes" responses defines the color of the neighborhood (ex. 25% of students feel supported is red).
-  -We used Javascript for leaflet, also importing Papaparse for our Google Form response parsing. We also included a library that supports a point-in-polygon calculation to match responses to neighborhoods.
--Google Forms
-  -We used Google Forms due to its simple to use interface and powerful connection to Google Sheets.
-  -Within Google Sheets, we have a script that calculates coordinated based on the location sent on the survey. This gives us our point for mapping.
-  -We used Papaparse and conditional statements within Javascript to manage our responses and include them in the map.
--VSCode
-  -We used VSCode as our code editor, specifically the live server feature that allows us to see our changes live.
- -Github
-  -We used GitHub as our Version Control System, allowing concurrent working on features through branching and pull requests.
+- Leaflet
+  - We used leaflet for our project mapping. We imported a GeoJSON that contains multipolygons with the neighborhoods/regions of LA county. 
+  - Each affirmative response to our "Support in reaching college goals question" is aggregated per region and the percentage of "Yes" responses defines the color of the neighborhood (ex. 25% of students feel supported is red).
+  - We used Javascript for leaflet, also importing Papaparse for our Google Form response parsing. We also included a library that supports a point-in-polygon calculation to match responses to neighborhoods.
+- Google Forms
+  - We used Google Forms due to its simple to use interface and powerful connection to Google Sheets.
+  - Within Google Sheets, we have a script that calculates coordinated based on the location sent on the survey. This gives us our point for mapping.
+  - We used Papaparse and conditional statements within Javascript to manage our responses and include them in the map.
+- VSCode
+  - We used VSCode as our code editor, specifically the live server feature that allows us to see our changes live.
+ - Github
+  - We used GitHub as our Version Control System, allowing concurrent working on features through branching and pull requests.
