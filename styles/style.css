@@ -23,3 +23,7 @@ ul {
 	padding-inline-start: 0;
 	display: block;
 }
+
+a:hover {
+	color: rgb(157, 137, 189);
+}
