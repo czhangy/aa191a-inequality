@@ -25,22 +25,25 @@ Educational inequality in the LA county area and its relation to socioeconomic c
 ### Technology used in the project
 
 - Leaflet
-  - We used leaflet for our project mapping. We imported a GeoJSON that contains multipolygons with the neighborhoods/regions of LA county. 
+  - We used leaflet for our project mapping. We imported a GeoJSON that contains multi-polygons with the neighborhoods/regions of LA county. 
   - Each affirmative response to our "Support in reaching college goals question" is aggregated per region and the percentage of "Yes" responses defines the color of the neighborhood (ex. 25% of students feel supported is red).
-  - We used Javascript for leaflet, also importing Papaparse for our Google Form response parsing. We also included a library that supports a point-in-polygon calculation to match responses to neighborhoods.
+  - We used JavaScript for Leaflet, also importing PapaParse for our Google Form response parsing. We also included a library that supports a point-in-polygon calculation to match responses to neighborhoods.
 - Google Forms
   - We used Google Forms due to its simple to use interface and powerful connection to Google Sheets.
   - Within Google Sheets, we have a script that calculates coordinated based on the location sent on the survey. This gives us our point for mapping.
-  - We used PapaParse and conditional statements within Javascript to manage our responses and include them in the map.
+  - We used PapaParse and conditional statements within JavaScript to manage our responses and include them in the map.
 - VSCode
   - We used VSCode as our code editor, specifically the live server feature that allows us to see our changes live.
- - Github
+ - GitHub
    - We used GitHub as our Version Control System, allowing concurrent working on features through branching and pull requests.
 
 
 ### How others can use it in the future
 
-- Students
-  - Students can use this application to be more aware of others' experiences and what resources helped them in their journeys
-- Educators
-  - Educators can understand what aspects of their support are valued most
+- Our dataset can be easily expanded:
+  - Limiting respondents to UCLA students makes the scope more manageable for the purposes of this project, but does bias the pool of respondents
+    - What about students that didn't go to college?
+    - What about students that went to other colleges?
+  - This application can be relatively easily repurposed for other areas/counties, allowing for different insights and stories
+- High school students can use it to learn from older students who have been in their shoes
+- Educators and admin can use it to learn about what resources students found most valuable and target their attention accordingly
