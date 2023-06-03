@@ -1,5 +1,6 @@
 // declare variables
 let mapOptions = { center: [34.2009, -118.444], zoom: 9 };
+let stories = [];
 
 // use the variables
 const map = L.map("map").setView(mapOptions.center, mapOptions.zoom);
@@ -49,12 +50,12 @@ Papa.parse(
 						}
 						neighborhoodDataStruct[
 							feature.properties.name
-						].responses.push(response);
+						].responses.push(item);
 					}
 				});
 			});
 
-			L.geoJSON(neighborhoodData, {
+			let neighborhoods = L.geoJSON(neighborhoodData, {
 				style: function (feature) {
 					// Colors based on % of yes responses for Support in Reaching College Goals. Prob will change to something else later.
 					const total =
@@ -79,6 +80,16 @@ Papa.parse(
 					layer.bindPopup(
 						`<strong>${feature.properties.name}</strong><br>${responses}`
 					);
+					layer.on("click", () => {
+						console.log(
+							neighborhoodDataStruct[feature.properties.name]
+								.responses
+						);
+						stories =
+							neighborhoodDataStruct[feature.properties.name]
+								.responses;
+						setStory(0);
+					});
 				},
 			}).addTo(map);
 		},
@@ -110,3 +121,25 @@ legend.onAdd = function (map) {
 };
 
 legend.addTo(map);
+
+const setStory = (page) => {
+	if (page < 0 || page >= stories.length) {
+		return;
+	}
+	document.getElementById("college-prep-resources").innerHTML =
+		stories[page][
+			"Which college preparatory resources did your high school offer?"
+		];
+	document.getElementById("career-resources").innerHTML =
+		stories[page][
+			"During high school did you ever see a career counselor or attend a career event?"
+		];
+	document.getElementById("support").innerHTML =
+		stories[page][
+			"What do you remember about this support and how did that make you feel at the time?"
+		];
+	document.getElementById("post-grad").innerHTML =
+		stories[page][
+			"Please share how you felt that your high school education prepared you for the steps after high school graduation."
+		];
+};
