@@ -34,9 +34,8 @@ main {
 
 #stories #stories-content {
 	display: none;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	padding: 1rem;
+	overflow: hidden;
+	height: 100%;
 }
 
 #stories h2 {
@@ -59,9 +58,9 @@ main {
 	align-items: center;
 	justify-content: center;
 	font-size: 2rem;
-	position: absolute;
-	bottom: 1rem;
 	width: 100%;
+	height: 50px;
+	background: white;
 }
 
 #stories button {
@@ -83,4 +82,45 @@ main {
 #stories #next-page {
 	border-left: 20px solid black;
 	margin-left: 1rem;
+}
+
+#stories #stories-text {
+	height: calc(100% - 2rem - 50px);
+	overflow-y: scroll;
+	padding: 1rem;
+}
+
+.popup {
+	font-family: "Archivo", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0.5rem;
+}
+
+.popup strong {
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.popup span {
+	text-align: center;
+	font-size: 1.1rem;
+}
+
+.popup p {
+	font-weight: bold;
+	font-size: 1.1rem;
+	text-align: center;
+}
+
+.popup li {
+	font-size: 1.3rem;
+}
+
+.popup .label {
+	font-size: inherit;
+	width: 90px;
+	display: inline-block;
+	text-align: left;
 }
