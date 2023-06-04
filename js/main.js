@@ -48,7 +48,7 @@ Papa.parse(
 				const point = turf.point([item.lng, item.lat]);
 				const response =
 					item[
-						"Did you feel supported in reaching your (college) goals in high school?"
+					"Did you feel supported in reaching your (college) goals in high school?"
 					];
 				neighborhoodData.features.forEach((feature) => {
 					if (turf.booleanPointInPolygon(point, feature)) {
@@ -74,7 +74,7 @@ Papa.parse(
 							.yesCount;
 					const yesPercentage = total === 0 ? 0 : yesCount / total;
 					let color;
-					if (total === 0) color = "grey";
+					if (total === 0) color = "none";
 					else if (yesPercentage < 0.25) color = "red";
 					else if (yesPercentage < 0.5) color = "yellow";
 					else if (yesPercentage < 0.75) color = "lightgreen";
@@ -143,19 +143,19 @@ const setStory = (page) => {
 	document.getElementById("page-num").innerHTML = currentPage + 1 + "/";
 	document.getElementById("college-prep-resources").innerHTML =
 		stories[page][
-			"Which college preparatory resources did your high school offer?"
+		"Which college preparatory resources did your high school offer?"
 		];
 	document.getElementById("career-resources").innerHTML =
 		stories[page][
-			"During high school did you ever see a career counselor or attend a career event?"
+		"During high school did you ever see a career counselor or attend a career event?"
 		];
 	document.getElementById("support").innerHTML =
 		stories[page][
-			"What do you remember about this support and how did that make you feel at the time?"
+		"What do you remember about this support and how did that make you feel at the time?"
 		];
 	document.getElementById("post-grad").innerHTML =
 		stories[page][
-			"Please share how you felt that your high school education prepared you for the steps after high school graduation."
+		"Please share how you felt that your high school education prepared you for the steps after high school graduation."
 		];
 };
 
