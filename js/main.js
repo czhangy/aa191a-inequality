@@ -48,7 +48,7 @@ Papa.parse(
                 const point = turf.point([item.lng, item.lat]);
                 const response =
                     item[
-                        "Did you feel supported in reaching your (college) goals in high school?"
+                    "Did you feel supported in reaching your (college) goals in high school?"
                     ];
                 neighborhoodData.features.forEach((feature) => {
                     if (turf.booleanPointInPolygon(point, feature)) {
@@ -75,19 +75,17 @@ Papa.parse(
                     const yesPercentage = total === 0 ? 0 : yesCount / total;
                     let color;
                     if (total === 0) color = "none";
-                    else if (yesPercentage < 0.25) color = "red";
-                    else if (yesPercentage < 0.5) color = "yellow";
-                    else if (yesPercentage < 0.75) color = "lightgreen";
-                    else color = "purple";
+                    else if (yesPercentage < 0.25) color = '#E0161B';
+                    else if (yesPercentage < 0.5) color = "#E0B724";
+                    else if (yesPercentage < 0.75) color = "#0117E1";
+                    else color = "#00A448";
                     return { color: color };
                 },
                 onEachFeature: function (feature, layer) {
                     layer.bindPopup(
-                        `<div class="popup"><strong>${
-                            feature.properties.name
-                        }</strong><span>Number of respondents: ${
-                            neighborhoodDataStruct[feature.properties.name]
-                                .total
+                        `<div class="popup"><strong>${feature.properties.name
+                        }</strong><span>Number of respondents: ${neighborhoodDataStruct[feature.properties.name]
+                            .total
                         }</span><p>Did you feel supported in reaching your goals in high school?</p><ul><li><span class="label">Yes:</span>${getResponseCount(
                             neighborhoodDataStruct,
                             feature.properties.name,
@@ -126,25 +124,28 @@ Papa.parse(
 let legend = L.control({ position: "bottomright" });
 
 legend.onAdd = function (map) {
-    let div = L.DomUtil.create("div", "info legend"),
-        grades = [0, 0.25, 0.5, 0.75],
-        colors = ["red", "yellow", "lightgreen", "purple"];
+    let div = L.DomUtil.create("div", "info legend");
 
     div.style.backgroundColor = "white";
     div.style.padding = "10px";
     div.style.borderRadius = "5px";
 
-    div.innerHTML = "Support in reaching college goals:<br>";
-    for (let i = 0; i < grades.length; i++) {
-        div.innerHTML +=
-            '<i style="background:' +
-            colors[i] +
-            '; width: 18px; height: 18px; float: left;"></i> ' +
-            grades[i] * 100 +
-            (grades[i + 1] ? "&ndash;" + grades[i + 1] * 100 + "%<br>" : "+%");
-    }
+    div.innerHTML = "<strong>Key:</strong><br> % of Students Who Felt Supported in <br> Reaching College Goals in High School<br><br>";
+
+    div.innerHTML +=
+        '<i style="background:#E0161B; width: 18px; height: 18px; float: left; margin-right: 5px;"></i> ' +
+        '0 &ndash; 25%<br>' +
+        '<i style="background:#E0B724; width: 18px; height: 18px; float: left; margin-right: 5px;"></i> ' +
+        '25 &ndash; 50%<br>' +
+        '<i style="background:#0117E1; width: 18px; height: 18px; float: left; margin-right: 5px;"></i> ' +
+        '50 &ndash; 75%<br>' +
+        '<i style="background:#00A448; width: 18px; height: 18px; float: left; margin-right: 5px;"></i> ' +
+        '75+%';
+
     return div;
 };
+
+
 
 legend.addTo(map);
 
@@ -156,19 +157,19 @@ const setStory = (page) => {
     document.getElementById("page-num").innerHTML = currentPage + 1 + "/";
     document.getElementById("college-prep-resources").innerHTML =
         stories[page][
-            "Which college preparatory resources did your high school offer?"
+        "Which college preparatory resources did your high school offer?"
         ];
     document.getElementById("career-resources").innerHTML =
         stories[page][
-            "During high school did you ever see a career counselor or attend a career event?"
+        "During high school did you ever see a career counselor or attend a career event?"
         ];
     document.getElementById("support").innerHTML =
         stories[page][
-            "What do you remember about this support and how did that make you feel at the time?"
+        "What do you remember about this support and how did that make you feel at the time?"
         ];
     document.getElementById("post-grad").innerHTML =
         stories[page][
-            "Please share how you felt that your high school education prepared you for the steps after high school graduation."
+        "Please share how you felt that your high school education prepared you for the steps after high school graduation."
         ];
 };
 
@@ -183,7 +184,7 @@ const getResponseCount = (neighborhoodDataStruct, name, response) => {
     for (let i = 0; i < neighborhoodDataStruct[name].total; i++) {
         if (
             neighborhoodDataStruct[name].responses[i][
-                "Did you feel supported in reaching your (college) goals in high school?"
+            "Did you feel supported in reaching your (college) goals in high school?"
             ] === response
         ) {
             count++;
