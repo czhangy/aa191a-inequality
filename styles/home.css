@@ -1,28 +1,62 @@
-main {
+.map-title {
+	text-align: center;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 2rem;
+	letter-spacing: 1px;
+}
+
+.content {
 	display: flex;
 	align-items: center;
 	position: relative;
 }
 
 #map {
-	height: 80vh;
+	height: 70vh;
 	width: calc(75% - 9rem);
 	border: 2px solid black;
 	position: absolute;
 	left: 4rem;
+	top: 0;
+}
+
+#map .filters {
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+	background: white;
+	z-index: 999;
+	padding: 0.5rem;
+	border-radius: 5px;
+}
+
+#map .filter {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.5rem;
+	font-family: "Archivo", sans-serif;
+	font-size: 1rem;
+}
+
+#map .filter:last-child {
+	margin-bottom: 0;
 }
 
 #stories {
-	height: 80vh;
+	height: 70vh;
 	width: 25%;
 	border: 2px solid black;
 	position: absolute;
 	right: 4rem;
 	box-sizing: border-box;
+	top: 0;
 }
 
 #stories #stories-placeholder {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 1rem;
