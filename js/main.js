@@ -60,6 +60,7 @@ legend.onAdd = function (map) {
 	div.style.backgroundColor = "white";
 	div.style.padding = "10px";
 	div.style.borderRadius = "5px";
+	div.style.fontFamily = "font-family: 'Archivo', sans-serif";
 
 	div.innerHTML =
 		"<strong>Key:</strong><br> % of Students Who Felt Supported in <br> Reaching College Goals in High School<br><br>";
@@ -190,7 +191,6 @@ const setMap = () => {
 
 	neighborhoodsLayer = L.geoJSON(neighborhoodData, {
 		style: function (feature) {
-			// Colors based on % of yes responses for Support in Reaching College Goals. Prob will change to something else later.
 			const total = neighborhoodDataStruct[feature.properties.name].total;
 			const yesCount =
 				neighborhoodDataStruct[feature.properties.name].yesCount;
