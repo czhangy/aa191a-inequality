@@ -60,7 +60,7 @@ The main issue this project looks to bring awareness to is the information dispa
  Our mapplication features color-coded LA county neighborhoods/regions. The region's color, as shown in a key in the bottom right side of the map, is determined by the percentage of respondants that answered "Yes" to feeling supported in reaching college goals while in high school.
 
 ### Default View of LA County Regions
- ![Default View of LA County Regions](./static/popup-default.png)
+ ![Default View of LA County Regions](./static/default-view.png)
 
  ### Sample Region Popup with Stories Displayed
  ![Sample Region Popup with Stories Displayed](./static/popup-default.png)
