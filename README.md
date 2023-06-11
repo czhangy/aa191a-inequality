@@ -7,12 +7,12 @@
 > ### **View our project live [_here_](https://czhangy.github.io/aa191a-inequality/index.html)**
 
 ## Table of Contents
-* [🖼️ Background](#🖼️-background)
-* [🎯 Objective](#🎯-objective)
-* [💪 Empowerment](#💪-empowerment)
-* [🖥️ Technology Utilized](#🖥️-technology-utilized)
-* [♻️ Repurposing the Technology](#♻️-repurposing-the-technology)
-* [🗺️ Features](#🗺️-features)
+* [🖼️ Background](#%EF%B8%8F-background)
+* [🎯 Objective](#-objective)
+* [💪 Empowerment](#-empowerment)
+* [🖥️ Technology Utilized](#%EF%B8%8F-technology-utilized)
+* [♻️ Repurposing the Technology](#%EF%B8%8F-repurposing-the-technology)
+* [🗺️ Features](#%EF%B8%8F-features)
 
 
 ## 🖼️ Background
