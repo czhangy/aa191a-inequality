@@ -1,5 +1,5 @@
 # PREP.LA
-<img src="./static/prepla_logo.png" alt= “PREP.LA Logo” width="25%" height="25%"> <!---This works when rendered on GitHub, but not VSCode by default-->
+<a><img src="./static/prepla_logo.png" align="left" height="50%" width="50%" ></a> <!---This works when rendered on GitHub, but not VSCode by default-->
 ## Promoting College Prep Narratives of UCLA Students from LA County
 
 > An open-source project created by: Zack Pakin, Charles Zhang, and Vicky Delk
